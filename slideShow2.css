@@ -1,0 +1,100 @@
+/* css lớp cung cha chứa ảnh */
+.conten__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+    overflow: hidden;
+}
+/* css button */
+.button__slideShow {
+
+    position: absolute;
+    top: 50%;
+    font-size: 6rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    filter: opacity(55%);
+
+
+}
+/* chỉnh cho cái animations và opacity mở đi khi hover */
+.button__slideShow:hover {
+    transition: 0.6s ease-in-out;
+    filter: opacity(80%);
+}
+/* nút trở lại */
+.button__comback {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    border-radius: 0 3px 0 3px;
+
+
+}
+/* nút next */
+.button__next {
+
+    position: absolute;
+    right: 0px;
+    top: calc(50% - 3px);
+    font-size: 6rem;
+    padding: 42px 10px;
+    border-radius: 3px 0px 3px 0px;
+
+}
+/* chỉnh chử góc hình 1/20 ,.. */
+.text {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    font-size: 3rem;
+    color: blueviolet;
+    animation-name: Showcolor;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+
+}
+
+@keyframes Showcolor {
+
+    0%{color: blue;}
+    25%{color: red;}
+    50%{color: yellow;}
+    
+}
+
+.animations {
+
+    -webkit-animation-name: display;
+    -webkit-animation-duration: 1.5s;
+    animation-name: display;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes display {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes display {
+    from {
+        opacity: 0.9;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}

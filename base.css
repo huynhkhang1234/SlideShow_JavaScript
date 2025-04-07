@@ -1,0 +1,152 @@
+html {
+
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+
+.grid {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+   
+   
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+
+.grid__row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-left: -5px;
+    margin-right: -5px;
+    justify-content: space-between;
+}
+.grid__row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* css phần khung sản phẩm */
+.grid__row-colum-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__row-colum-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 19%;
+    
+  
+}
+.grid__row-colum-10{
+    padding-left: 5px;
+    padding-right: 5px;    
+    width: 83.3334%;
+}
+
+@keyframes hienthilen {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+/* nut dieu khien */
+
+.button {
+    min-width: 142px;
+    min-height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    padding: 0px;
+    cursor: pointer;
+    background-color:#F0FFF0;
+    color: #333;
+    margin-right: 7px;
+
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.button.buttondangki {
+    color: #fff;
+    background-color: red;
+}
+.nutdieukhien{
+
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 440px ;
+}
+
+.button__home__filter{
+    min-width: 142px;
+    min-height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    padding: 0px;
+    cursor: pointer;
+    background-color:#fff;
+    color: #333;
+    margin: 0px 7px;
+}
+.button__backround{
+    background-color: red;
+    color: #fff;
+}
+/* nút chuyển trang chung cho các tran: ví du như: 1 2 4 5,... */
+.web__chuyentrang{
+    display: flex;
+    align-items: baseline;
+    
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 100px;
+}
+.web__chuyentrang-sothutu-active .web__chuyentrang-link-the_a{
+    background-color: red;
+}
+.web__chuyentrang-link-the_a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 30px;
+    font-weight: 300;
+
+}
+.web__chuyentrang-link-the_a:hover{
+    color: #bebdbd;
+   
+}
+.web__chuyentrang-padding-home-product{
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
